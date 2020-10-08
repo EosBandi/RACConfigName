@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DDD2FEA8-801E-463B-8913-9CCCDA2D9429}</ProjectGuid>
+    <ProjectGuid>{6D7767ED-16DC-4AE9-807C-A34A4A6B197B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MissionPlanner.RACConfigName</RootNamespace>
     <AssemblyName>MissionPlanner.RACConfigName</AssemblyName>
@@ -39,7 +39,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)ExtLibs\BaseClasses\BaseClasses.csproj">
@@ -74,15 +73,15 @@
       <Project>{c8b88795-6d01-494d-83ad-6944bd4c5023}</Project>
       <Name>MissionPlanner.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)ExtLibs\GeoUtility\GeoUtility.csproj">
+    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GeoUtility\GeoUtility.csproj">
       <Project>{7f7994ce-823f-4a04-bbea-d0a3808ff56d}</Project>
       <Name>GeoUtility</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)ExtLibs\GMap.NET.Core\GMap.NET.Core.csproj">
+    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GMap.NET.Core\GMap.NET.Core.csproj">
       <Project>{d0c39d9d-bed0-418b-9a5e-713176caf40c}</Project>
       <Name>GMap.NET.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)ExtLibs\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
+    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
       <Project>{e06def77-f933-42fb-afd7-db2d0d8d6a98}</Project>
       <Name>GMap.NET.WindowsForms</Name>
     </ProjectReference>
@@ -101,18 +100,9 @@
     <Reference Include="OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\OpenTK.GLControl.3.1.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\SharpDX.4.1.0\lib\net45\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.DirectInput, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <HintPath>$(SolutionDir)packages\SharpDX.DirectInput.4.1.0\lib\net45\SharpDX.DirectInput.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
