@@ -8,12 +8,11 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MissionPlanner.RACConfigName</RootNamespace>
     <AssemblyName>MissionPlanner.RACConfigName</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -57,7 +56,11 @@
       <Project>{13d2ec90-c41f-48a1-aada-859b6dc24edc}</Project>
       <Name>MAVLink</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)MissionPlanner.csproj">
+    <ProjectReference Include="..\mp-latest-dev\MissionPlanner.csproj">
+      <Project>{a2e22272-95fe-47b6-b050-9ae7e2055bf5}</Project>
+      <Name>MissionPlanner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\00Git\mp-latest-dev\MissionPlanner.csproj">
       <Project>{a2e22272-95fe-47b6-b050-9ae7e2055bf5}</Project>
       <Name>MissionPlanner</Name>
     </ProjectReference>
@@ -73,15 +76,15 @@
       <Project>{c8b88795-6d01-494d-83ad-6944bd4c5023}</Project>
       <Name>MissionPlanner.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GeoUtility\GeoUtility.csproj">
+    <ProjectReference Include="..\mp-plugin-dev\ExtLibs\GeoUtility\GeoUtility.csproj">
       <Project>{7f7994ce-823f-4a04-bbea-d0a3808ff56d}</Project>
       <Name>GeoUtility</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GMap.NET.Core\GMap.NET.Core.csproj">
+    <ProjectReference Include="..\mp-plugin-dev\ExtLibs\GMap.NET.Core\GMap.NET.Core.csproj">
       <Project>{d0c39d9d-bed0-418b-9a5e-713176caf40c}</Project>
       <Name>GMap.NET.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\00GIT\mp-plugin-dev\ExtLibs\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
+    <ProjectReference Include="..\mp-plugin-dev\ExtLibs\GMap.NET.WindowsForms\GMap.NET.WindowsForms.csproj">
       <Project>{e06def77-f933-42fb-afd7-db2d0d8d6a98}</Project>
       <Name>GMap.NET.WindowsForms</Name>
     </ProjectReference>
